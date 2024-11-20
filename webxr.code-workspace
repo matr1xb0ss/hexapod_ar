@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../XR"
+		},
+		{
+			"path": "../glTF-Sample-Models"
+		}
+		
+	]
+}
