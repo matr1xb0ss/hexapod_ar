@@ -56,9 +56,17 @@ export class MeshNode extends Node {
     this.colorBuffer = null;
     this.indexBuffer = null;
     this.primitive = null;
-
   }
 
+  // Update the vertices of the mesh
+  updateVertices(newVertices) {
+    this.vertices = newVertices;
+  }
+
+  // Update indices of the mesh
+  updateIndices(newIndices) {
+    this.indices = newIndices;
+  }
 
   onRendererChanged(renderer) {
     const gl = renderer.gl;
