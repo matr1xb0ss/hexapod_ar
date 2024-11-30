@@ -8,6 +8,9 @@ import { QueryArgs } from './js/util/query-args.js';
 
 import { MeshNode } from './js/render/nodes/mesh-node.js';
 
+import updateMeshNode from "./js/util/updateMeshNode.js";
+
+
 // If requested, use the polyfill to provide support for mobile devices
 // and devices which only support WebVR.
 import WebXRPolyfill from './js/third-party/webxr-polyfill/build/webxr-polyfill.module.js';
@@ -190,3 +193,6 @@ function onXRFrame(t, frame) {
 
 // Start the XR application.
 initXR();
+
+// Update mesh position
+updateMeshNode(customMesh, scene);
